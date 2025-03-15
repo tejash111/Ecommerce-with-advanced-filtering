@@ -3,7 +3,15 @@ import "./Recomended.css"
 
 const Recomended = () => {
   return (
-    <div>Recomended</div>
+    <div>
+        <h2 className='recomended-title'>Recomended</h2>
+        <div className="recomended-btns">
+            <button className='btns'>All products</button>
+            <button className='btns'>Nike</button>
+            <button className='btns'>Puma</button>
+            <button className='btns'>Vans</button>
+        </div>
+    </div>
   )
 }
 
