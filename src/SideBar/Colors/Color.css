@@ -1,0 +1,8 @@
+.color-title{
+    margin-top: 2rem;
+    font-weight: normal;
+}
+
+.all {
+    background: linear-gradient(blue,crimson);
+}
