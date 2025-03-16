@@ -8,11 +8,18 @@ import { FaUser } from "react-icons/fa";
 
 
 
-const Nav = () => {
+const Nav = ({handleInputChange,query}) => {
     return (
         <nav>
             <div className='nav-container'>
-                <input type="text" className='search-input' placeholder='Enter your search shoes'/>
+            <input
+          className="search-input"
+          type="text"
+          onChange={handleInputChange}
+          value={query}
+          placeholder="Enter your search shoes."
+        />
+
 
             </div>
 

@@ -20,7 +20,7 @@ const App = () => {
     setQuery(event.target.value)
   }
 
-  const filteredItems = products.filter(product => product.title.toLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+  const filteredItems = products.filter(product => product.title.toLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
 )
 
 // ----radio filter ----
@@ -60,12 +60,14 @@ function filteredData(products,selected,query){
   
 }
 
+const result = filteredData(products,selectedCategory,query)
+
   return (
     <div>
-      <Sidebar/>
-      <Nav/>
-      <Recomended/>
-      <Products/>
+      <Sidebar  handleChange={handleChange}/>
+      <Nav query={query} handleInputChange={handleInputChange}/>
+      <Recomended handleClick={handleClick}/>
+      <Products result={result}/>
       
     </div>
   )

@@ -5,18 +5,14 @@ import { IoBagAdd } from "react-icons/io5";
 import Card from '../Components/Card';
 
 
-const Products = () => {
+const Products = ({result}) => {
   return (
    <div className='card-container'>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
-    <Card/>
+   {result}
+   
+   
+   
+   
    </div>
   )
 }
